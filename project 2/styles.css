@@ -1,0 +1,35 @@
+body {
+    font-family: system-ui;
+    background: rgba(189, 195, 199), 0.8;
+    color: #333333;
+    text-align: center;
+  }
+  #container-img {
+    width: 100%;
+  }
+  #img-div {
+    background-color: #eee;
+    padding: 2%;
+  }
+  #image {
+    width: 85%;
+    position: relative;
+    align-self: center;
+  }
+  .timeline-list {
+    width:50%;
+    display: flex;
+    text-align: start;
+    padding-right: 25%;
+    padding-left: 25%;
+  }
+  .coach {
+    width:50%;
+    display: flex;
+    text-align: start;
+    padding-right: 25%;
+    padding-left: 28%;
+  }
+  footer {
+    padding-top:3%;
+  }
