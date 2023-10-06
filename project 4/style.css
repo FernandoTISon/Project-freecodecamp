@@ -1,0 +1,115 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.container {
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+.navbar .subtitle {
+    color: black;
+    margin: 10px;
+    text-align: center;
+
+}
+.navbar {
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    overflow: auto;
+}
+.navbar-list {
+    display: flex;
+    flex-direction: column;
+}
+.navbar-list-item {
+    text-decoration: none;
+    border-top: 1px solid black;
+    padding: 10px 30px;
+    width: 100%;
+    list-style: none;
+    box-sizing: border-box;
+}
+.nav-link {
+    cursor: pointer;
+    display: block;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+}
+.subtitle {
+    font-size: 1.8em;
+    font-weight: thin;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    gap: 20px;
+}
+.content-list {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+}
+
+.content code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.reference-link {
+    text-decoration: underline;
+    color: blue;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+    .navbar {
+        width: 300px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border: 0;
+        border-right: 3px solid rgba(0, 22, 22, 0.4);
+    }
+    .main {
+        padding-left: 290px;
+        padding-top: 30px;
+    }
+
+}
+@media (min-width: 1200px) {
+    .main {
+        padding-left: 210px;
+    }
+}
