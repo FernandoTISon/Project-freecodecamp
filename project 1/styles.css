@@ -1,0 +1,325 @@
+body {
+    font-family: Arial;
+    color: white;
+    background-image: linear-gradient( 
+  115deg
+  , rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    padding-top: 50px;
+  }
+  header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .title {
+    display: inline-flex;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .subtitle {
+    display: inline-flex;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    height: 100%;
+    width: 70vw;
+    background-color: rgba(27, 27, 50, 0.8);
+    padding: 5vw;
+    margin: 0px 10vw;
+    align-items: start;
+    flex-direction: column;
+    border-radius: 5px;
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+}
+  .text-box {
+    border-radius: 5px;
+    width: 60vw;
+    height: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .text-form {
+    margin-bottom: 10px;
+  }
+  .pick-box {
+    border-radius: 5px;
+    width: 60vw;
+    height: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .indication, .feedback {
+      margin-bottom: 2vw;
+      transform: scale(1.5);
+  }
+  .mgbt {
+    margin-bottom: 3vw;
+  }
+  .mglft {
+    margin-left: 5vw;
+  }
+  
+  .comment-box {
+      border-radius: 5px;
+      height: 10vw;
+      margin-bottom: 30px;
+  }
+  .submit {
+      border-radius: 5px;
+      width: 60vw;
+      height: 5vw;
+      max-height: 50px;
+      margin-bottom: 3vw;
+      background-color: #4ee44e;
+  }
+/*
+  @media only screen and (max-width: 375px) {
+    .container {
+        margin:0;
+        width: 90vw;
+        padding: 5vh 5vw;
+    }
+    .input-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-box {
+        width: 80vw;
+        height: 30px;
+        margin-left: 5vw;
+    }
+
+      .text-form {
+        margin-left: 5vw;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        width: 70vw;
+      }
+      .pick-box {
+        width: 81vw;
+        height: 30px;
+        margin-left: 5vw;
+        margin-bottom: 30px;
+      }
+      
+      .indication, .feedback {
+        margin-left: 5vw;
+        margin-bottom: 5px;
+        transform: scale(2);
+      }
+      .mgbt {
+        margin-bottom: 30px;
+      }
+      
+      .comment-box {
+        width: 81vw;
+        height: 20vw;
+        margin-left: 5vw;
+        margin-bottom: 30px;
+      }
+      .submit {
+        width: 82vw;
+        height: 5vh;
+        margin-left: 5vw;
+    }
+}
+*/
+  @media (max-width: 575px) {
+    .container {
+        margin:0px;
+        width: 90vw;
+        padding: 5vh 5vw;
+    }
+    .input-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-box {
+        width: 80vw;
+        height: 30px;
+        margin-left: 5vw;
+    }
+
+      .text-form {
+        margin-left: 5vw;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        width: 70vw;
+      }
+      .pick-box {
+        width: 81vw;
+        height: 30px;
+        margin-left: 5vw;
+        margin-bottom: 30px;
+      }
+      
+      .indication, .feedback {
+        margin-left: 5vw;
+        margin-bottom: 15px;
+        transform: scale(1.5);
+      }
+      .mgbt {
+        margin-bottom: 30px;
+      }
+      
+      .comment-box {
+        width: 80vw;
+        height: 20vw;
+        margin-left: 5vw;
+        margin-bottom: 30px;
+      }
+      .submit {
+        width: 82vw;
+        height: 5vh;
+        margin-left: 5vw;
+    }
+    .mglft {
+      margin-left: 5vw;
+    }
+      
+  }
+  @media (max-width: 768px) and (min-width: 575px) {
+    .container {
+        display: flex;
+        justify-self: center;
+        max-width: 740px;
+        margin:0 auto;
+        width: 100vw;
+        padding: 5vh 0vw;
+    }
+    .input-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-box {
+        width: 80vw;
+        height: 33px;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        max-width: 600px;
+        padding: 0%;
+        border: 0;
+    }
+
+      .text-form {
+        margin-left: 6vw;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        width: 70vw;
+        max-width: 600px;
+        padding: 0%;
+        border: 0;
+      }
+      .pick-box {
+        width: 81vw;
+        height: 30px;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        margin-bottom: 30px;
+        max-width: 600px;
+        padding: 0%;
+        border: 0;
+      }
+      
+      .indication, .feedback {
+        margin-left: 6vw;
+        margin-bottom: 15px;
+        transform: scale(1.5);
+      }
+      .mgbt {
+        margin-bottom: 30px;
+      }
+      
+      .comment-box {
+        max-width: 600px;
+        border: 0;
+        width: 80vw;
+        height: 15vw;
+        margin-left: 6vw;
+        margin-bottom: 30px;
+        margin-right: 6vw;
+        padding: 0%;
+      }
+      .submit {
+        max-width: 600px;
+        padding: 0%;
+        border: 0;
+        width: 82vw;
+        height: 7.5vh;
+        max-height: 50px;
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+      
+  }
+  @media (max-width: 1024px) and (min-width: 768px) {
+    .container {
+      max-width: 700px;
+      padding: 40px 0px;
+      padding-top: 40px;
+      margin: 0px;
+    }
+    .mglft {
+      margin-left: 40px;
+    }
+    
+  }
+  @media (max-width: 1480px) and (min-width: 1024px){
+    .container {
+      max-width: 700px;
+      padding: 40px 0px;
+      padding-top: 40px;
+      margin: 0px;
+    }
+    .mglft {
+      margin-left: 40px;
+    }
+    .indication, .feedback, .submit, .pick-box {
+      max-width: 620px;
+    }
+    .text-box {
+      max-width: 610px;
+    }
+  }
+  @media (max-width: 2560px) and (min-width: 1480px) {
+    .container {
+      max-width: 700px;
+      padding: 40px 0px;
+      padding-top: 40px;
+      margin: 0px;
+    }
+    .mglft {
+      margin-left: 40px;
+    }
+    .mgbt {
+      margin-bottom: 50px;
+    }
+    .indication, .feedback {
+      max-width: 620px;
+      margin-bottom: 20px;
+    }
+    .submit, .pick-box {
+      max-width: 620px;
+    }
+    .text-box {
+      max-width: 610px;
+    }
+    .comment-box {
+      max-height: 150px;
+    }
+  }
+  

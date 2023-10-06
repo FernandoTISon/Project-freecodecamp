@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="title" id="title">freeCodeCamp Survey Form</h1>
+        <p class="subtitle" id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <main>
+        <form class="container" onSubmit="alert('oi')" id="survey-form">
+            <div class="input-container">
+                <label class="text-form box-name mglft" id="name-label"> Name </label>
+                <input class="text-box mglft" placeholder=" Enter your name" type="text" id="name" required></input>
+            </div>
+            <div class="input-container">
+                <label class="text-form box-email mglft" id="email-label"> Email </label>
+                <input class="text-box mglft" placeholder=" Enter your email" type="email" id="email" required></input>
+            </div>
+            <div class="input-container">
+                <label class="text-form box-age mglft" id="number-label"> Age (optional) </label>
+                <input class="text-box mglft" placeholder=" Age" type="number" id="number" min="10" max="99"></input>
+            </div>
+            <div class="input-container"></div>
+                <label class="text-form mglft">Which option best describes your current role?</label>
+                <select class="pick-box mglft" required id="dropdown">
+                    <option disabled selected>Select current hole</option>
+                    <option>Student</option>
+                    <option>Full Time Learner</option>
+                    <option>Full Time Job</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label class="text-form mglft">Would you recommend freeCodeCamp to a friend?</label>
+
+                <label><input class="indication mglft" type="radio" name="indication" value="definitely" checked></input>
+                    Definitely</label>
+                <label><input class="indication mglft" type="radio" name="indication" value="maybe"></input> Maybe</label>
+                <label><input class="indication mgbt  mglft" type="radio" name="indication" value="not-sure"></input> Not
+                    sure</label>
+            </div>
+            <div class="input-container">
+                <label class="text-form mglft">What is your favorite feature of freeCodeCamp?</label>
+                <select class="pick-box mglft" id="dropdown">
+                    <option disabled selected>Select an option</option>
+                    <option>Challenges</option>
+                    <option>Projects</option>
+                    <option>comunity</option>
+                    <option>Open Source</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label class="text-form mglft">What would you like to see improved? (Check all that apply)</label>
+
+                <label><input class="feedback mglft" type="checkbox" value="front-end-projects"></input> Front-end Projects </label>
+                <label><input class="feedback mglft" type="checkbox" value="back-end-projects"></input> Back-end Projects</label>
+                <label><input class="feedback mglft" type="checkbox" value="data-visualization"></input> Data Visualization</label>
+                <label><input class="feedback mglft" type="checkbox" value="challenges"></input> Challenges</label>
+                <label><input class="feedback mglft" type="checkbox" value="open-source-comunnity"></input> Open Source Community</label>
+                <label><input class="feedback mglft" type="checkbox" value="gitter-help-rooms"></input> Gitter help rooms</label>
+                <label><input class="feedback mglft" type="checkbox" value="videos"></input> Videos</label>
+                <label><input class="feedback mglft" type="checkbox" value="city-meetups"></input> City Meetups</label>
+                <label><input class="feedback mglft" type="checkbox" value="wiki"></input> Wiki</label>
+                <label><input class="feedback mglft" type="checkbox" value="forum"></input> Forum</label>
+                <label><input class="feedback mglft mgbt" type="checkbox"></input> Additional Courses</label>
+
+                <label class="text-form mglft">Any comments or suggestions?</label>
+                <textarea class="comment-box mglft" placeholder=" Enter your comment here..."></textarea>
+                <input class="submit mglft" type="submit" value="submit" id="submit"></input>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
